@@ -11,7 +11,7 @@ partakers = set()
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
-    subscribers.add(user.id)
+    partakers.add(user.id)
     
     # Send custom welcome message
     await update.message.reply_text("Phantom’s Bc 〽️\nYou’re in. 👽\nKeep your notifications on.")
